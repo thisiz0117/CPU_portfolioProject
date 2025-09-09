@@ -41,6 +41,7 @@ body {
             height: 200px;
             padding: 18px 16px;
             border-radius: 12px;
+            transition: all .3s;
 
             h2 {
                 font-size: 24px;
@@ -58,25 +59,24 @@ body {
 }
 
 .theme {
-    &-normal {
-        transition: all .3s;
-        border: solid 1px #d8d8d8;
-    }
-
     &-lee {
-        background: hsla(232, 73%, 65%, 1);
-        background: linear-gradient(120deg, hsla(232, 73%, 65%, 1) 0%, hsla(279, 33%, 48%, 1) 100%);
-        background: -moz-linear-gradient(120deg, hsla(232, 73%, 65%, 1) 0%, hsla(279, 33%, 48%, 1) 100%);
-        background: -webkit-linear-gradient(120deg, hsla(232, 73%, 65%, 1) 0%, hsla(279, 33%, 48%, 1) 100%);
-        color: hsl(0, 0%, 95%, 94%);
-        transition: all .3s;
+            transition: all .3s;
+            border: solid 1px #d8d8d8;
+            background: #f8f8f8;
+
+        &:hover {
+            background: linear-gradient(120deg, hsla(232, 73%, 65%, 1) 0%, hsla(279, 33%, 48%, 1) 100%);
+            color: hsla(0, 0%, 95%, 0.94);
+        }
     }
 
     &-bang {
-        background: hsla(283, 83%, 86%, 1);
-        background: linear-gradient(120deg, hsla(283, 83%, 86%, 1) 0%, hsla(105, 11%, 85%, 1) 100%);
-        background: -moz-linear-gradient(120deg, hsla(283, 83%, 86%, 1) 0%, hsla(105, 11%, 85%, 1) 100%);
-        background: -webkit-linear-gradient(120deg, hsla(283, 83%, 86%, 1) 0%, hsla(105, 11%, 85%, 1) 100%);
         transition: all .3s;
+        border: solid 1px #d8d8d8;
+        background: #f8f8f8;
+
+        &:hover {
+            background: linear-gradient(120deg, hsla(283, 83%, 86%, 1) 0%, hsla(105, 11%, 85%, 1) 100%);
+        }
     }
 }
