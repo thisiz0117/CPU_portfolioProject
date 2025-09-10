@@ -35,4 +35,10 @@ $(document).ready(function() {
         opacity: 1,
         top: '50%'
     }, 600, 'easeOutExpo');
+
+    $('#lee').click(function (e) { 
+        e.preventDefault();
+        location.href = 'lee.html';
+        console.log('si');
+    });
 });
